@@ -15,10 +15,14 @@ public class GuessANumber {
         //!!! randomNumber.nextInt(-100); -> НЕ Е ВАЛИДЕН ЗАПИС, ПОНЕЖЕ НЯМА КАК ДА ИМАМЕ ОТРИЦАТЕЛНИ ЧИСЛА !!!
         int computerNumber = randomNumber.nextInt(100);
 
+        System.out.println("YOU ARE ALLOWED 6 ATTEMPTS");
+        //Променлива за броя опити
+        int numberOfAttempts = 1;
+
         //while цикъл
         //стоп: числото на играча съвпада със случайно генерираното число от компютъра
         //продължи: ако числото на играча е различно от случайно генерираното число от компютъра
-        while (true) {
+        while (numberOfAttempts <= 6) {
             System.out.print("Guess a number (1-100): ");
             String playerInput = scan.nextLine();
             int playerNumber;
@@ -47,6 +51,12 @@ public class GuessANumber {
             } else {
                 System.out.println("Invalid input.");
             }
+
+            //Проверяваме дали играча е надхвърлил броя разрешени опити за познаване на числото
+            if (numberOfAttempts == 6){
+                System.out.println("! ! ! YOU HAVE NO MORE ATTEMPTS ! ! !");
+            }
+            numberOfAttempts++;
         }
     }
 }
