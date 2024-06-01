@@ -13,4 +13,8 @@ Choose **number** between `1` and `100`, then press `Enter`.
 
 The computer selects a **random number**, then returns information whether the number is **less than, greater than**, or **equal** to the selected **number**.
 
+## Code
 [Source code] ([GuessANumber.java](https://github.com/ShSherif94/GuessANumberBySherif/blob/main/GuessANumber.java))
+
+## Example screenshots for the "Guess a Number" game:
+![Screenshot for Guess a Number](https://github.com/ShSherif94/GuessANumberBySherif/assets/170802220/e4ac8463-272e-4d1f-bc42-c474ac137e42)
