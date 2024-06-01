@@ -12,3 +12,5 @@ You win the game when your wrong attempts are less than or equal to 6 and your n
 Choose **number** between `1` and `100`, then press `Enter`.
 
 The computer selects a **random number**, then returns information whether the number is **less than, greater than**, or **equal** to the selected **number**.
+
+[Source code] ([GuessANumber.java](https://github.com/ShSherif94/GuessANumberBySherif/blob/main/GuessANumber.java))
